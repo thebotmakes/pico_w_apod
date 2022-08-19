@@ -9,7 +9,7 @@ As I had buttons on the display I thought I'd print out some of the APOD text to
 
 I have the pi zero script scheduled via crontab to run every hour, and the pico script is running continuously but only updates the data every so often.
 
-First get the pi zero set up to run as a web server following this guide:  https://www.seeedstudio.com/blog/2020/06/23/setup-a-raspberry-pi-web-server-and-easily-build-an-html-webpage-m/ (everything from Installing Apache Web Server downwards).  index.html shows what I've got - it displays a raw binary image, a small pico sized jpeg and the full image.
+First get the pi zero set up to run as a web server following this guide:  https://www.seeedstudio.com/blog/2020/06/23/setup-a-raspberry-pi-web-server-and-easily-build-an-html-webpage-m/ (everything from Installing Apache Web Server downwards).  index.html shows what I've got - it displays a raw binary image, a small pico sized jpeg and the full image.  (Initially I thought I needed the binary image as I'd been following this site: http://www.penguintutor.com/programming/picodisplayanimations, but in the end the jpeg was fine - I've left the code here in case I need it for anything else).
 
 Then run the pi_picture_server.py script on the pi zero w - this will create the picture files for the html page.  You can view the webpage created by entering the IP address in a web browser for the pi zero on another computer / your phone just to check it's displaying correctly.  Note this will only work on your local network.
 
