@@ -1,5 +1,8 @@
 # pico_w_apod
+
 Get the NASA asronomy picture of the day using a pico w (with a little help from a friendly raspberry pi)
+
+![alt text](https://github.com/thebotmakes/pico_w_apod/blob/main/apod_pico-6.jpeg)
 
 I wanted a little desktop viewer for the NASA Astronomy Picture of the Day API data - I'm using those pictures for another project, so I wanted something sitting on my desktop in case today's picture is a 'good' one (they're all good, I just mean 'good' for this other project). When the Pico W came out I thought this would be ideal with a little Pimoroni Pico Display 2 - only thing is the NASA pictures are a little bit big for processing with a Pico.  
 
