@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+   </head>
+   <body>
+<p>This is the raw apod image</p>
+<img src="apod.raw">
+<p>This is the jpeg apod image</p>
+<img src="apod_pico.jpeg">
+<p>This is the png apod image</p>
+<img src="apod_large.png">
+   </body>
+</html>
