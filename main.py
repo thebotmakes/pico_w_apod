@@ -23,7 +23,7 @@ def get_data():
     
     apod_data = get_apod_data(secrets.apod_api)
 
-    url = 'YOUR PI SERVER LINK'
+    url = 'YOUR LOCAL PI SERVER/apod_pico.jpeg'
 
     request_status = requests.get(url)
     print(request_status.status_code)
@@ -36,7 +36,10 @@ def get_data():
         desc_list = apod_data['explanation'].split()
         apod_date = apod_data['date']
         apod_title = apod_data['title']
-        apod_copyright = apod_data['copyright']
+        try:
+            apod_copyright = apod_data['copyright']
+        except (KeyError, IndexError, TypeError):
+            apod_copyright = ''
         
     print(apod_data['explanation'])
     return desc_list, apod_date, apod_title, apod_copyright
@@ -117,4 +120,3 @@ while True:
         data_count += 1
     else:
         data_count = 0
-        
